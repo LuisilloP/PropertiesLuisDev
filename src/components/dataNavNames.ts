@@ -1,0 +1,1 @@
+export const navNames = [["Principal", "/"], ["Propiedades", "/properties"], ["Nosotros", "/"], ["Contacto", "/"]]

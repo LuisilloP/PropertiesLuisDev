@@ -1,22 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
+  --swiper-navigation-size: 30px;
+}
+body html
+{
+  overflow-x: hidden;
+
+}
+.swiper-button-next, .swiper-button-prev
+{
+  color: #242424;
+}
+.hiddenIO {
+  scale: (0.8);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: translateY(+40px);
+}
+
+.showIO {
+  scale: (1);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+  transform: translateY(0px);
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
+} */
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +51,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
