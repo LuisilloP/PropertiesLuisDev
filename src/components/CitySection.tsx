@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import maps from "../assets/maps.svg"
 import useOberver from '@/hooks/useOberver'
@@ -25,7 +25,7 @@ const CitySection = (props: Props) => {
                 <h1 className='text-3xl font-bold tracking-widest'>{place}</h1>
                 <p className='pt-2 italic text-sm'>{name}</p>
                 <p className=' pt-3 text-lg'>{text}</p>
-                <a href={ubication} className='flex w-40  items-center' target='_blank'>
+                <a href={ubication} className='flex w-40  items-center' rel='noreferrer' target='_blank'>
                     <Image src={maps} alt='maps-image-link' className='w-10'></Image>
                     Como llegar ?
                 </a>

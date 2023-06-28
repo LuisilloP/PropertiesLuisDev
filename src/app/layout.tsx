@@ -1,5 +1,7 @@
-import Footer from './footer/Footer'
+import React from 'react';
+import 'swiper/css';
 import './globals.css'
+import Footer from './footer/Footer'
 import Header from './header/Header'
 export const metadata = {
   title: 'Create Next App',
@@ -7,7 +9,6 @@ export const metadata = {
 }
 
 export default function RootLayout({
-
   children,
 }: {
   children: React.ReactNode

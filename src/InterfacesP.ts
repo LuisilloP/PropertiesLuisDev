@@ -14,4 +14,15 @@ export interface Property {
     meters: number,
     price: number,
     __v: number
-} 
+}
+export interface InterfaceOptionValues {
+    Baños?: string,
+    Dormitorios?: string,
+    Luz?: string,
+    Agua?: string
+}
+export interface FormData {
+    name: string
+    mail: string
+    message: string
+}

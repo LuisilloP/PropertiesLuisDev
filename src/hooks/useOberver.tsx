@@ -1,8 +1,8 @@
 
-import { useEffect, useState, useRef, DetailedHTMLProps, HTMLAttributes } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export default function useOberver(settings: Object) {
+export default function useOberver(settings: object) {
     const [intersecting, setIntersectig] = useState(false)
     const elementRef = useRef(null)
 
@@ -11,7 +11,7 @@ export default function useOberver(settings: Object) {
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log('here')
+                // console.log('here')
                 setIntersectig(entry.isIntersecting)
             })
         }, settings)

@@ -1,7 +1,6 @@
 "use client"
-import { Property } from "@/InterfacesP";
 import { showProperties } from "@/getData/fetching";
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ContextProperty from "./ContextProperty";
 type Props =
     {
@@ -11,11 +10,11 @@ type Props =
 const PropertyContext = ({ children }: Props) => {
     const [properties, setProperties] = useState<[]>([])
     useEffect(() => {
-        console.log(properties)
+        // console.log(properties)
         if (properties.length == 0) {
             (async () => {
                 const properties = await showProperties()
-                console.log(properties);
+                // console.log(properties);
                 setProperties(properties)
 
             })()

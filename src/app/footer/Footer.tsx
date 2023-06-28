@@ -1,9 +1,8 @@
 import React from 'react'
 import { navNames } from "../../components/dataNavNames"
 import Link from 'next/link'
-type Props = {}
 
-const Footer = (props: Props) => {
+const Footer = () => {
     return (
         <footer className=' bg-neutral-900 min-h-[5rem] mt-10'>
 

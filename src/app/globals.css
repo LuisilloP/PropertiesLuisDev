@@ -29,6 +29,7 @@ body html
   transition: all 1s ease-in-out;
   transform: translateY(0px);
 }
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -52,3 +53,86 @@ body html
     )
     rgb(var(--background-start-rgb));
 } */
+/* Css Property Selected */
+
+.Propiedad-selected-Img
+{
+    height: 40vh!important;
+}
+.cont-selected
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px 0px 20px 0px ;
+    gap:20px
+
+}
+.cont-img-selected
+{
+display: flex;
+}
+.mySwiperVertical
+{
+    height: 600px;
+    margin-left: 0 !important;
+    cursor: pointer;
+    /* .swiper-button-prev {
+        left: 50% !important;
+        top: 1% !important;
+        transform: rotate(90deg);
+        transform-origin: left center;
+      }
+      .swiper-button-next {
+        left: 50% !important;
+        top: 97% !important;
+        transform: rotate(90deg);
+        transform-origin: left center;
+      }
+      
+      .swiper-button-next, .swiper-button-prev
+      {
+        --swiper-navigation-size: 22px;
+
+      } */
+      
+}
+
+.mySwiperVertical .swiper-button-prev {
+  left: 50% !important;
+  top: 1% !important;
+  transform: rotate(90deg);
+  transform-origin: left center;
+}
+.mySwiperVertical .swiper-button-next {
+  left: 50% !important;
+  top: 97% !important;
+  transform: rotate(90deg);
+  transform-origin: left center;
+}
+  
+.mySwiperVertical, .swiper-button-next .swiper-button-prev
+{
+  --swiper-navigation-size: 22px;
+}
+.swiper-button-next, .swiper-button-prev
+{
+  color:#1b1b1b !important ;
+}
+
+.mySwiperSelect .swiper-slide img
+    {
+  
+        border-radius: 8px;
+    } 
+
+
+.secondVertical
+{
+   
+    width: 230px!important;
+    height: 290px!important;
+    border-radius: 8px;
+    
+}
+
+
